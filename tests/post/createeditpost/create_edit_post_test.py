@@ -27,7 +27,6 @@ class createUpdatePost(unittest.TestCase):
             self.ts.mark(result, "Title Updated Successfully!!!!!")
         else:
             self.ts.mark(result, "Failed to update the Title!!!!!")
-            pa
             assert result == False
             #self.assertEqual(act, exp)
 

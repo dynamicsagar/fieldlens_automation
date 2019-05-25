@@ -16,6 +16,7 @@ class cProject(unittest.TestCase):
 
     def test_project(self):
         self.pr = NewProject(self.driver)
+        self.ts = TestStatus(self.driver)
         self.log.info("*#" * 20)
         self.log.info("verify project created successfully")
         self.log.info("*#" * 20)
