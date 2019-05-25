@@ -10,18 +10,22 @@ class downloadReports(unittest.TestCase):
 
     log = cl.customLogger(logging.DEBUG)
 
-    @pytest.fixture(autouse=True)
+    '''@pytest.fixture(autouse=True)
     def objectSetup(self, oneTimeSetUp):
         self.re = Reports(self.driver)
-        self.ts = TestStatus(self.driver)
+        self.ts = TestStatus(self.driver)'''
 
     @pytest.mark.run(order=1)
     def test_DownloadReports(self):
+        self.re = Reports(self.driver)
+        self.ts = TestStatus(self.driver)
         self.re.downloadReport()
 
 
     @pytest.mark.run(order=2)
     def test_RerunReports(self):
+        self.re = Reports(self.driver)
+        self.ts = TestStatus(self.driver)
         self.re.downloadRerunReport()
         result1 = self.re.verifyRerunFunctionality()
         assert result1 == True

@@ -9,13 +9,15 @@ import logging
 class editAddress(unittest.TestCase):
     log = cl.customLogger(logging.DEBUG)
 
-    @pytest.fixture(autouse=True)
+    '''@pytest.fixture(autouse=True)
     def objectSetup(self, oneTimeSetUp):
         self.editap = editAddressProject(self.driver)
-        self.ts = TestStatus(self.driver)
+        self.ts = TestStatus(self.driver)'''
 
     @pytest.mark.run(order=1)
     def test_01editAddressProject(self):
+        self.editap = editAddressProject(self.driver)
+        self.ts = TestStatus(self.driver)
         self.log.info("*#" * 20)
         self.log.info("Edit the address of project")
         self.log.info("*#" * 20)

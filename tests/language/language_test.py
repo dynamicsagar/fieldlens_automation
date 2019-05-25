@@ -10,14 +10,9 @@ import time
 class LanguageChange(unittest.TestCase):
     log = cl.customLogger(logging.DEBUG)
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.driver = driver
-        self.lang = Language(self.driver)
-
-    @pytest.fixture(autouse=True)
+    '''@pytest.fixture(autouse=True)
     def objectSetup(self, oneTimeSetUp):
-        self.ts = TestStatus(self.driver)
+        self.ts = TestStatus(self.driver)'''
 
     @pytest.mark.run(order=1)
     def test_t1LanguageVerification(self):

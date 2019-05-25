@@ -10,9 +10,9 @@ class cProject(unittest.TestCase):
 
     log = cl.customLogger(logging.DEBUG)
 
-    @pytest.fixture(autouse=True)
+    '''@pytest.fixture(autouse=True)
     def objectSetup(self, oneTimeSetUp):
-        self.ts = TestStatus(self.driver)
+        self.ts = TestStatus(self.driver)'''
 
     def test_project(self):
         self.pr = NewProject(self.driver)

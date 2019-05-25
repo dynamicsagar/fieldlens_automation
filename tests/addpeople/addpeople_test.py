@@ -9,13 +9,15 @@ import logging
 class addPeople(unittest.TestCase):
     log = cl.customLogger(logging.DEBUG)
 
-    @pytest.fixture(autouse=True)
+    '''@pytest.fixture(autouse=True)
     def objectSetup(self, oneTimeSetUp):
-        self.ap = AddPeople(self.driver)
-        self.ts = TestStatus(self.driver)
+        #self.ap = AddPeople(self.driver)
+        self.ts = TestStatus(self.driver)'''
 
     @pytest.mark.run(order=1)
     def test_01addNewPeople(self):
+        self.ap = AddPeople(self.driver)
+        self.ts = TestStatus(self.driver)
         self.log.info("*#" * 20)
         self.log.info("People adding started")
         self.log.info("*#" * 20)
@@ -36,6 +38,8 @@ class addPeople(unittest.TestCase):
 
     @pytest.mark.run(order=2)
     def test_02addAlreadyAddedPeople(self):
+        self.ts = TestStatus(self.driver)
+        self.ap = AddPeople(self.driver)
         self.log.info("*#" * 20)
         self.log.info("Select already added people started")
         self.log.info("*#" * 20)
@@ -51,6 +55,8 @@ class addPeople(unittest.TestCase):
         #self.ts.markFinal("test_verifyAlreadyAddedPeople", result, "Already added people text verified")
 
     def test_03SelectFilterFromDropdown(self):
+        self.ap = AddPeople(self.driver)
+        self.ts = TestStatus(self.driver)
         self.ap.filterFunctionality()
 
 

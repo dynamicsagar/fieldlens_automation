@@ -10,13 +10,15 @@ import time
 class LoginTests(unittest.TestCase):
     log = cl.customLogger(logging.DEBUG)
 
-    @pytest.fixture(autouse=True)
+    '''@pytest.fixture(autouse=True)
     def objectSetup(self, oneTimeSetUp):
         self.lp = LoginPage(self.driver)
-        self.ts = TestStatus(self.driver)
+        self.ts = TestStatus(self.driver)'''
 
     @pytest.mark.run(order=1)
     def test_t1invalidLogin(self):
+        self.lp = LoginPage(self.driver)
+        self.ts = TestStatus(self.driver)
         self.log.info("*#" * 20)
         self.log.info("test_t1invalidLogin started")
         self.log.info("*#" * 20)
@@ -28,6 +30,8 @@ class LoginTests(unittest.TestCase):
 
     @pytest.mark.run(order=2)
     def test_t2validLogin(self):
+        self.lp = LoginPage(self.driver)
+        self.ts = TestStatus(self.driver)
         self.log.info("*#" * 20)
         self.log.info("test_t1invalidLogin started")
         self.log.info("*#" * 20)
