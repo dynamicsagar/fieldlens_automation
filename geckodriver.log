@@ -1,0 +1,52 @@
+1555135914606	geckodriver	INFO	geckodriver 0.20.0
+1555135914696	geckodriver	INFO	Listening on 127.0.0.1:54870
+1555135917560	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Sagar\\AppData\\Local\\Temp\\rust_mozprofile.xjskdyoOHp7e"
+1558698640626	geckodriver	INFO	geckodriver 0.20.0
+1558698640704	geckodriver	INFO	Listening on 127.0.0.1:61449
+1558698643620	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Sagar\\AppData\\Local\\Temp\\rust_mozprofile.oAy2xR1a7Zfm"
+1558698673015	geckodriver	INFO	geckodriver 0.20.0
+1558698673025	geckodriver	INFO	Listening on 127.0.0.1:61508
+1558698676113	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Sagar\\AppData\\Local\\Temp\\rust_mozprofile.2SbaQrKvfNFQ"
+1558698676727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558698676727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558698676727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558698676860	Marionette	TRACE	Received observer notification profile-after-change
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1558698676903	Marionette	TRACE	Received observer notification toplevel-window-ready
+1558698677064	Marionette	TRACE	Received observer notification command-line-startup
+1558698677064	Marionette	TRACE	Received observer notification nsPref:changed
+1558698677064	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1558698677715	Marionette	TRACE	Received observer notification toplevel-window-ready
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1558698679022	Marionette	TRACE	Received observer notification marionette-startup-requested
+1558698679023	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1558698679027	Marionette	TRACE	All scripts recorded.
+1558698679028	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1558698679028	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1558698679028	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1558698679029	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1558698679029	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1558698679030	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1558698679030	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1558698679081	Marionette	INFO	Listening on port 61518
+1558698679082	Marionette	DEBUG	Remote service is active
+1558698679276	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:61536
+1558698679278	Marionette	DEBUG	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1558698679279	Marionette	DEBUG	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:179: ... t@chrome://marionette/content/server.js:236:9\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:492:20\n"},null]
+[Child 3804, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7356, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 71558698694841	Marionette	DEBUG	Closed connection 0
+[Child 8576, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8576, Chrome_1558698695741	Marionette	TRACE	Received observer notification xpcom-will-shutdown
+1558698695741	Marionette	DEBUG	Resetting recommended pref app.update.disabledForTesting
+1558698695741	Marionette	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1558698695741	Marionette	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1558698695741	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1558698695742	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1558698695742	Marionette	DEBUG	Resetting recommended pref security.certerrors.mitm.priming.enabled
+1558698695742	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1558698695742	Marionette	INFO	Stopped listening on port 61518
+1558698695743	Marionette	DEBUG	Remote service is inactive
+1558698696099	geckodriver::marionette	ERROR	Failed to stop browser process
